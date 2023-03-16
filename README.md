@@ -1,60 +1,34 @@
-```typescript
-type Mission = {
-    [key: string]: boolean | (() => void);
+```java
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class YupData {
+    public static void main(String[] args) {
+        Map<String, Object> YupData = new HashMap<>();
+        YupData.put("name", "Yup");
+        YupData.put("age", "x");
+
+        ArrayList<String> skills = new ArrayList<>();
+
+        skills.add("None");
+        skills.add("Developer Discord Bots");
+        skills.add("Professional Sleeper");
+        skills.add("Açaí Lover");
+        YupData.put("skills", skills);
+
+        Map<String, Object> missions = new HashMap<>();
+        missions.put("Make a Discord Bot", true);
+        missions.put("Travel Around the World", "loading()");
+        YupData.put("missions", missions);
+
+        ArrayList<String> loves = new ArrayList<>();
+
+        loves.add("Açaí");
+        loves.add("International Music");
+        loves.add("Code");
+        YupData.put("loves", loves);
+
+        System.out.println(YupData);
+    }
 }
-
-type YupData = {
-    name: string;
-    age: string;
-    skills: string[];
-    missions: Mission;
-    loves: string[];
-}
-
-const YupData: YupData = {
-    name: "Yup",
-    age: "x",
-    skills: [
-        "JavaScript",
-        "Developer Discord Bots",
-        "Professional Sleeper",
-        "Hamburguer Lover"
-    ],
-    missions: {
-        "make a discord bot": true,
-        "travel around the world": () => { /* loading implementation here */ }
-    },
-    loves: ["Hambuguer", "Ice Cream", "Eletronic Music", "Code"]
-};
-
-console.log(YupData);
-type Mission = {
-    [key: string]: boolean | (() => void);
-}
-
-type YupData = {
-    name: string;
-    age: string;
-    skills: string[];
-    missions: Mission;
-    loves: string[];
-}
-
-const YupData: YupData = {
-    name: "Yup",
-    age: "x",
-    skills: [
-        "JavaScript",
-        "Developer Discord Bots",
-        "Professional Sleeper",
-        "Hamburguer Lover"
-    ],
-    missions: {
-        "make a discord bot": true,
-        "travel around the world": () => { /* loading implementation here */ }
-    },
-    loves: ["Hambuguer", "Ice Cream", "Eletronic Music", "Code"]
-};
-
-console.log(YupData);
-```
